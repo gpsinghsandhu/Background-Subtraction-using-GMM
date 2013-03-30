@@ -6,7 +6,7 @@ REQUIREMENTS:
 
 This project is the C++ implementation of Background Subtraction using adaptive GMM models as discussed by Zoran Zivkovic in his paper "Improved Adaptive Gaussian Mixture Model for Background Subtraction".
 
-This project was developed as a part of learning about the computer vision and the gives though a very basic but an efficient and accurate implementation of the above mentioned algorithm.
+This project was developed as a part of learning about the computer vision and thus gives (though very basic) an efficient and accurate implementation of the above mentioned algorithm.
 It uses OpenCV just for the data acquisition and preprocessing and its 'Mat' object for susequent processing. Following which is an implementation for the GMM models as discussed in the paper.
 
 The testing data has also been provided with the project. It is a part of the PETS 2009 dataset.
