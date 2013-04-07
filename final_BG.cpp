@@ -88,7 +88,6 @@ struct Node1
 //Some function associated with the structure management
 Node* Create_Node(double info1, double info2, double info3);
 void Insert_End_Node(Node* np);
-void bubble_sort();
 gaussian* Create_gaussian(double info1, double info2, double info3);
 
 Node* Create_Node(double info1, double info2, double info3)
@@ -182,44 +181,6 @@ gaussian* Delete_gaussian(gaussian* nptr)
 		exit(0);
 	}
 	return nptr;
-}
-
-void bubble_sort()
-{
-	bool change = true;
-
-	while(change == true)
-	{
-		change = false;
-		nptr = start;
-		if(nptr != NULL)
-		{
-			while(nptr != rear && nptr != NULL)
-			{
-				next = nptr->Next;
-				previous = nptr->Previous;
-				if(nptr->weight < next->weight)
-				{
-					if(nptr != start)
-						previous->Next = next;
-					else
-						start = next;
-					nptr->Next = next->Next;
-					next->Previous = nptr->Previous;
-					if(next != rear)
-						next->Next->Previous = nptr;						
-					else
-						rear = nptr;
-					next->Next = nptr;
-					nptr->Previous = next;
-					change = true;
-					
-				}
-				else
-				nptr = nptr->Next;
-			}
-		}
-	}
 }
 
 void main()
