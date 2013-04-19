@@ -12,3 +12,5 @@ It uses OpenCV just for the data acquisition and preprocessing and its 'Mat' obj
 The testing data has also been provided with the project. It is a part of the PETS 2009 dataset.
 
 Note: This project was developed on the basis of my undrstanding of the paper and thus must not considered an exact implementation of the project.
+
+Check out the result video - http://youtu.be/QwmX3U78K6A
